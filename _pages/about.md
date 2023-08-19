@@ -19,14 +19,11 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi! I am currently a fifth-year Ph.D. student at MIT majoring in Electrical Engineering and Computer Science.
-My research focuses on machine learning and developing robust and efficient algorithms driven by clinical problems.
-Applications include motion-robust 3D rendering of the human brain, real-time quality assessment in MR scans as well as pose estimation and motion characterization of fetuses.
-I am advised by Prof. [Elfar Adalsteinsson](https://www.rle.mit.edu/people/directory/elfar-adalsteinsson/) and collaborate closely with Prof. [Polina Golland](https://people.csail.mit.edu/polina/) and Prof. [P. Ellen Grant](https://scholar.google.com/citations?user=W4dqZ7EAAAAJ).
+I am a senior research engineer at Samsung Research America (SRA), MPI Lab, working on real-world computational imaging and computer vision problems. I obtained my Ph.D. degree from Electrical Engineering and Computer Sciences at UC Berkeley, working with [Prof. Miki Lustig](http://people.eecs.berkeley.edu/~mlustig/) and [Prof. Stella Yu](https://web.eecs.umich.edu/~stellayu/). I was a member of [Berkeley Artificial Intelligence Research (BAIR)](https://bair.berkeley.edu/). I also work closely with [Prof. Jon Tamir](http://users.ece.utexas.edu/~jtamir/) at UT Austin and [Dr. Frank Ong](https://www.frankongh.com/) at Roblox. I graduated with honor from the department of [Biomedical Engineering](http://www.med.tsinghua.edu.cn/)in [Tsinghua University](http://www.tsinghua.edu.cn/publish/thu2018en/index.html/) **(Happy 110th birthday, Tsinghua!!)**. My research interests lie in **computational imaging, deep learning, signal processing, inverse problem, medical imaging and computer vision**. I am an enthusiast of science, engineering, music, ice skating, rock climbing and everything related to medicine and healthcare! My name in Chinese is 王可.
 
-I also did summer internships at Google and Meta, working on automated Ads bidding and large-scale video recommendation systems respectively.
+I did a wonderful  internship at Adobe Emerging Products Group in the summer of 2021 (Work successfully deployed at PhotoShope Camera)!
 
-Prior to MIT, I received my Bachelor's degree from Tsinghua University in 2018. I also spent a summer as a research assistant at Stanford, where I was advised by Prof. [John Pauly](https://web.stanford.edu/~pauly/) and Prof. [Greg Zaharchuk](https://profiles.stanford.edu/greg-zaharchuk).
+I interned at Adobe Research as a research scientist intern from May 2022 to March 2023.
 
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.test
