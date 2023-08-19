@@ -5,11 +5,11 @@ permalink: /
 subtitle: # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
-  align: right
-  image: ke_photo.jpg
-  image_circular: true # crops the image to make it circular
+  align: left
+  image: kewang.jpg
+  image_circular: false # crops the image to make it circular
   address: >
-    <p>Samsung Research America (MPI Lab)</p>
+    <p>Samsung Research America</p>
     <p>6625 Excellence Way</p>
     <p>Plano, Texas, 75023</p>
 
