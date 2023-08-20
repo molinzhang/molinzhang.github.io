@@ -94,6 +94,9 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/teaching/">teaching</a>
               </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/service/">service</a>
+              </li>
 
               <!-- Toogle theme mode -->
               <li class="toggle-container">
@@ -376,6 +379,42 @@
   </div>
 </div>
 </li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 abbr"></div>
+
+  <!-- Entry bib key -->
+  <div id="fei2023" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">Iterative Motion-Compensated Reconstruction with Convolutional Neural Network (iMoCo-Net) for Ultrashort Echo Time (UTE) Proton Lung MRI</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      Fei Tan, <em>Ke Wang</em>, Michael Lustig, and Peder Larson</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>In Proc. Intl. Soc. Mag. Reson. Med</em>, 2023
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+    </div>
+    
+    <div class="badges">
+    </div>
+
+    
+  </div>
+</div>
+</li>
 </ol>
 
   <h2 class="year">2022</h2>
@@ -471,6 +510,88 @@
 <!-- _layouts/bib.html -->
 <div class="row">
   <div class="col-sm-2 preview">
+<img id="uncertaintypng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/uncertainty.png"><div id="uncertaintypng-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('uncertaintypng-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="uncertaintypng-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("uncertaintypng-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('uncertaintypng');
+      var modalImg = document.getElementById("uncertaintypng-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="kwang20221" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">Rigorous Uncertainty Estimation for MRI Reconstruction</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      <em>Ke Wang</em>, Anastasios Angelopoulos, Alfredo De Goyeneche, Amit Kohli, and
+      <span class="more-authors" title="click to view 4 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '4 more authors' ? 'Efrat Shimron, Stella Yu, Jitendra Malik, Michael Lustig' : '4 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">4 more authors</span>
+</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>In Proc. Intl. Soc. Mag. Reson. Med</em>, 2022
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a href="https://archive.ismrm.org/2022/0749.html" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
+    </div>
+    
+    <div class="badges">
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Deep-learning (DL)-based MRI reconstructions have shown great potential to reduce scan time while maintaining diagnostic image quality. However, their adoption has been plagued with fears that the models will hallucinate or eliminate important anatomical features. To address this issue, we develop a framework to identify when and where a reconstruction model is producing potentially misleading results. Specifically, our framework produces confidence intervals at each pixel of a reconstruction image such that 95% of these intervals contain the true pixel value with high probability. In-vivo 2D knee and brain reconstruction results demonstrate the effectiveness of our proposed uncertainty estimation framework.</p>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 preview">
 <img id="pnasjpg" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/pnas.jpg"><div id="pnasjpg-modal" class="modal2">
       <span class="closeimg" onclick="document.getElementById('pnasjpg-modal').style.display='none'">×</span>
       <div class="myCaption"></div>
@@ -539,10 +660,109 @@
   </div>
 </div>
 </li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 abbr"></div>
+
+  <!-- Entry bib key -->
+  <div id="kwang20222" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">ResoNet: Physics Informed Deep Learning based Off-Resonance Correction Trained on Synthetic Data</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      Alfredo De Goyeneche1, Shreya Ramachandran, <em>Ke Wang</em>, Ekin Karasan, and
+      <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Stella Yu, Michael Lustig' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>In Proc. Intl. Soc. Mag. Reson. Med</em>, 2022
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+    </div>
+    
+    <div class="badges">
+    </div>
+
+    
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 abbr"></div>
+
+  <!-- Entry bib key -->
+  <div id="kwang20223" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">BladeNet: Rapid PROPELLER Acquisition and Reconstruction for High spatio-temporal Resolution Abdominal MRI</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      Efrat Shimron, Alfredo De Goyeneche, <em>Ke Wang</em>, Ali B. Syed, and
+      <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Shreyas Vasanawala, Michael Lustig' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>In Proc. Intl. Soc. Mag. Reson. Med</em>, 2022
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+    </div>
+    
+    <div class="badges">
+    </div>
+
+    
+  </div>
+</div>
+</li>
 </ol>
 
   <h2 class="year">2021</h2>
-  <ol class="bibliography"><li>
+  <ol class="bibliography">
+<li>
 <!-- _layouts/bib.html -->
 <div class="row">
   <div class="col-sm-2 preview">
@@ -627,19 +847,600 @@
     </div>
   </div>
 </div>
-</li></ol>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 preview">
+<img id="cgjpg" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/cg.jpg"><div id="cgjpg-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('cgjpg-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="cgjpg-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("cgjpg-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('cgjpg');
+      var modalImg = document.getElementById("cgjpg-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="maier2021cg" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">CG-SENSE revisited: Results from the first ISMRM reproducibility challenge</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      Oliver Maier, Steven Hubert Baete, Alexander Fyrdahl, Kerstin Hammernik, and
+      <span class="more-authors" title="click to view 7 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '7 more authors' ? 'Seb Harrevelt, Lars Kasper, Agah Karakuzu, Michael Loecher, Franz Patzig, Ye Tian,  others' : '7 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">7 more authors</span>
+</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>Magnetic resonance in medicine</em>, 2021
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.28569" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
+    </div>
+    
+    <div class="badges">
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>The aim of this work is to shed light on the issue of reproducibility in MR image reconstruction in the context of a challenge. Participants had to recreate the results of Advances in sensitivity encoding with arbitrary k-space trajectories by Pruessmann et al. The task of the challenge was to reconstruct radially acquired multicoil k-space data brain/heart following the method in the original paper, reproducing its key figures. Results were compared to consolidated reference implementations created after the challenge, accounting for the two most common programming languages used in the submissions Matlab/Python. Visually, differences between submissions were small. Pixel-wise differences originated from image orientation, assumed field-of-view, or resolution. The reference implementations were in good agreement, both visually and in terms of image similarity metrics. While the description level of the published algorithm enabled participants to reproduce CG-SENSE in general, details of the implementation varied, for example, density compensation or Tikhonov regularization. Implicit assumptions about the data lead to further differences, emphasizing the importance of sufficient metadata accompanying open datasets. Defining reproducibility quantitatively turned out to be nontrivial for this image reconstruction challenge, in the absence of ground-truth results. Typical similarity measures like NMSE of SSIM were misled by image intensity scaling and outlier pixels. Thus, to facilitate reproducibility, researchers are encouraged to publish code and data alongside the original paper. Future methodological papers on MR image reconstruction might benefit from the consolidated reference implementations of CG-SENSE presented here, as a benchmark for methods comparison.</p>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 abbr"></div>
+
+  <!-- Entry bib key -->
+  <div id="kwang20212" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">DSLR+: Enhancing deep subspace learning reconstruction for high-dimensional MRI</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      Christopher Sandino, Frank Ong, <em>Ke Wang</em>, Michael Lustig, and
+      <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'Shreyas S. Vasanawala' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>In Proc. Intl. Soc. Mag. Reson. Med</em>, 2021
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+    </div>
+    
+    <div class="badges">
+    </div>
+
+    
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 abbr"></div>
+
+  <!-- Entry bib key -->
+  <div id="kwang20214" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">A GPU-accelerated Extended Phase Graph Algorithm for differentiable optimization and learning</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      Somnath Rakshit, <em>Ke Wang</em>, and Jonathan I. Tamir</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>In Proc. Intl. Soc. Mag. Reson. Med</em>, 2021
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+    </div>
+    
+    <div class="badges">
+    </div>
+
+    
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 preview">
+<img id="outcomesjpg" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/outcomes.jpg"><div id="outcomesjpg-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('outcomesjpg-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="outcomesjpg-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("outcomesjpg-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('outcomesjpg');
+      var modalImg = document.getElementById("outcomesjpg-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="wang2021outcomes" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">OUTCOMES: Rapid Under-sampling Optimization achieves up to 50% improvements in reconstruction accuracy for multi-contrast MRI sequences</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      <em>Ke Wang</em>, Enhao Gong, Yuxin Zhang, Suchadrima Banerjee, and
+      <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Greg Zaharchuk, John Pauly' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>arXiv preprint arXiv:2103.04566</em>, 2021
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a href="http://arxiv.org/abs/https://arxiv.org/pdf/2103.04566.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+    </div>
+    
+    <div class="badges">
+    </div>
+
+    
+  </div>
+</div>
+</li>
+</ol>
 
   <h2 class="year">2020</h2>
-  <ol class="bibliography"></ol>
+  <ol class="bibliography"><li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 preview">
+<img id="t2png" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/t2.png"><div id="t2png-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('t2png-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="t2png-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("t2png-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('t2png');
+      var modalImg = document.getElementById("t2png-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="tamir2020computational" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">Computational MRI with physics-based constraints: Application to multicontrast and quantitative imaging</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      Jonathan I Tamir, Frank Ong, Suma Anand, Ekin Karasan, and
+      <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Ke Wang, Michael Lustig' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>IEEE signal processing magazine</em>, 2020
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a href="https://ieeexplore.ieee.org/abstract/document/8962390" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
+    </div>
+    
+    <div class="badges">
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Compressed sensing takes advantage of low-dimensional signal structure to reduce sampling requirements far below the Nyquist rate. In magnetic resonance imaging (MRI), this often takes the form of sparsity through wavelet transform, finite differences, and low rank extensions. Though powerful, these image priors are phenomenological in nature and do not account for the mechanism behind the image formation. On the other hand, MRI signal dynamics are governed by physical laws, which can be explicitly modeled and used as priors for reconstruction. 1These explicit and implicit signal priors can be synergistically combined in an inverse problem framework to recover sharp, multi-contrast images from highly accelerated scans. Furthermore, the physics-based constraints provide a recipe for recovering quantitative, bio-physical parameters from the data. This article introduces physics-based modeling constraints in MRI and shows how they can be used in conjunction with compressed sensing for image reconstruction and quantitative imaging. We describe model-based quantitative MRI, as well as its linear subspace approximation. We also discuss approaches to selecting user-controllable scan parameters given knowledge of the physical model. We present several MRI applications that take advantage of this framework for the purpose of multi-contrast imaging and quantitative mapping.</p>
+    </div>
+  </div>
+</div>
+</li></ol>
 
   <h2 class="year">2019</h2>
-  <ol class="bibliography"></ol>
+  <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 preview">
+<img id="tcjpg" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/tc.jpg"><div id="tcjpg-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('tcjpg-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="tcjpg-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("tcjpg-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('tcjpg');
+      var modalImg = document.getElementById("tcjpg-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="nan2019non" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">Non-Invasive Remote Temperature Monitoring Using Microwave-Induced Thermoacoustic Imaging</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      Hao Nan, Aidan Fitzpatrick, <em>Ke Wang</em>, and Amin Arbabian</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>In 2019 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)</em>
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/31947301/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
+    </div>
+    
+    <div class="badges">
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Non-invasive temperature monitoring of tissue at depth in real-time is critical to hyperthermia therapies such as high-intensity focused ultrasound. Knowledge of temperature allows for monitoring treatment as well as providing real-time feedback to adjust deposited power in order to maintain safe and effective temperatures. Microwave-induced thermoacoustic (TA) imaging, which combines the conductivity/dielectric contrast of microwave imaging with the resolution of ultrasound, shows potential for estimating temperature non-invasively in real-time by indirectly measuring the temperature dependent parameters from reconstructed images. In this work, we study the temperature dependent behavior of the generated pressure in the TA effect and experimentally demonstrate simultaneous imaging and temperature monitoring using TA imaging. The proof-of-concept experiments demonstrate millimeter spatial resolution while achieving degree-level accuracy.</p>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 abbr"></div>
+
+  <!-- Entry bib key -->
+  <div id="kwang20191" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">Unsupervised Learning for Improved Fidelity Multi-contrast MRI</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      <em>Ke Wang</em>, Frank Ong, Jonathan I. Tamir, and Michael Lustig</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>In Proc. Intl. Soc. Mag. Reson. Med</em>, 2019
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+    </div>
+    
+    <div class="badges">
+    </div>
+
+    
+  </div>
+</div>
+</li>
+</ol>
 
   <h2 class="year">2018</h2>
-  <ol class="bibliography"></ol>
+  <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 abbr"></div>
+
+  <!-- Entry bib key -->
+  <div id="wang2018reconstruction" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">Reconstruction and Registration of Large-Scale Medical Scene Using Point Clouds Data from Different Modalities</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      <em>Ke Wang</em>, Han Song, Jiahui Zhang, Xinran Zhang, and
+      <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'Hongen Liao' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>arXiv preprint arXiv:1809.01318</em>, 2018
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a href="http://arxiv.org/abs/https://arxiv.org/abs/1809.01318" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+    </div>
+    
+    <div class="badges">
+    </div>
+
+    
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 abbr"></div>
+
+  <!-- Entry bib key -->
+  <div id="kwang20182" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">Ultrafast Temperature Estimation from Undersampled K-space for MR Guided Microwave Ablation</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      <em>Ke Wang</em>, Zijing Dong, Bingyao Chen, Jiafei Yang, and
+      <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Xing Wei, Kui. Ying' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>In Proc. Intl. Soc. Mag. Reson. Med</em>, 2018
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+    </div>
+    
+    <div class="badges">
+    </div>
+
+    
+  </div>
+</div>
+</li>
+</ol>
 
   <h2 class="year">2017</h2>
-  <ol class="bibliography"></ol>
+  <ol class="bibliography"><li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 abbr"></div>
+
+  <!-- Entry bib key -->
+  <div id="kwang20171" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">Fast Temperature Estimation Using Golden Angle Radial from Undersampled K-space for MR Guided Microwave Ablation</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      <em>Ke Wang</em>, Fuyixue Wang, Zijing Dong, Bingyao Chen, and
+      <span class="more-authors" title="click to view 3 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '3 more authors' ? 'Jiafei Yang, Xing Wei, Kui. Ying' : '3 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">3 more authors</span>
+</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>In Proc. Intl. Soc. Mag. Reson. Med</em>, 2017
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+    </div>
+    
+    <div class="badges">
+    </div>
+
+    
+  </div>
+</div>
+</li></ol>
 
 
 </div>

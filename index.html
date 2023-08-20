@@ -105,6 +105,9 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/teaching/">teaching</a>
               </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/service/">service</a>
+              </li>
 
               <!-- Toogle theme mode -->
               <li class="toggle-container">
@@ -714,6 +717,88 @@ I presented our work on <strong>Memory-efficient Learning for High-dimensional M
 <!-- _layouts/bib.html -->
 <div class="row">
   <div class="col-sm-2 preview">
+<img id="uncertaintypng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/uncertainty.png"><div id="uncertaintypng-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('uncertaintypng-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="uncertaintypng-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("uncertaintypng-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('uncertaintypng');
+      var modalImg = document.getElementById("uncertaintypng-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="kwang20221" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">Rigorous Uncertainty Estimation for MRI Reconstruction</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      <em>Ke Wang</em>, Anastasios Angelopoulos, Alfredo De Goyeneche, Amit Kohli, and
+      <span class="more-authors" title="click to view 4 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '4 more authors' ? 'Efrat Shimron, Stella Yu, Jitendra Malik, Michael Lustig' : '4 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">4 more authors</span>
+</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>In Proc. Intl. Soc. Mag. Reson. Med</em>, 2022
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a href="https://archive.ismrm.org/2022/0749.html" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
+    </div>
+    
+    <div class="badges">
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Deep-learning (DL)-based MRI reconstructions have shown great potential to reduce scan time while maintaining diagnostic image quality. However, their adoption has been plagued with fears that the models will hallucinate or eliminate important anatomical features. To address this issue, we develop a framework to identify when and where a reconstruction model is producing potentially misleading results. Specifically, our framework produces confidence intervals at each pixel of a reconstruction image such that 95% of these intervals contain the true pixel value with high probability. In-vivo 2D knee and brain reconstruction results demonstrate the effectiveness of our proposed uncertainty estimation framework.</p>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 preview">
 <img id="pnasjpg" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/pnas.jpg"><div id="pnasjpg-modal" class="modal2">
       <span class="closeimg" onclick="document.getElementById('pnasjpg-modal').style.display='none'">×</span>
       <div class="myCaption"></div>
@@ -778,6 +863,75 @@ I presented our work on <strong>Memory-efficient Learning for High-dimensional M
     <!-- Hidden abstract block -->
     <div class="abstract hidden">
       <p>Although open databases are an important resource in the current deep learning (DL) era, they are sometimes used “off label”: Data published for one task are used to train algorithms for a different one. This work aims to highlight that this common practice may lead to biased, overly optimistic results. We demonstrate this phenomenon for inverse problem solvers and show how their biased performance stems from hidden data-processing pipelines. We describe two processing pipelines typical of open-access databases and study their effects on three well-established algorithms developed for MRI reconstruction: compressed sensing, dictionary learning, and DL. Our results demonstrate that all these algorithms yield systematically biased results when they are naively trained on seemingly appropriate data: The normalized rms error improves consistently with the extent of data processing, showing an artificial improvement of 25 to 48% in some cases. Because this phenomenon is not widely known, biased results sometimes are published as state of the art; we refer to that as implicit “data crimes.” This work hence aims to raise awareness regarding naive off-label usage of big data and reveal the vulnerability of modern inverse problem solvers to the resulting bias.</p>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 preview">
+<img id="tcjpg" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/tc.jpg"><div id="tcjpg-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('tcjpg-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="tcjpg-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("tcjpg-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('tcjpg');
+      var modalImg = document.getElementById("tcjpg-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="nan2019non" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">Non-Invasive Remote Temperature Monitoring Using Microwave-Induced Thermoacoustic Imaging</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      Hao Nan, Aidan Fitzpatrick, <em>Ke Wang</em>, and Amin Arbabian</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>In 2019 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)</em>
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/31947301/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
+    </div>
+    
+    <div class="badges">
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Non-invasive temperature monitoring of tissue at depth in real-time is critical to hyperthermia therapies such as high-intensity focused ultrasound. Knowledge of temperature allows for monitoring treatment as well as providing real-time feedback to adjust deposited power in order to maintain safe and effective temperatures. Microwave-induced thermoacoustic (TA) imaging, which combines the conductivity/dielectric contrast of microwave imaging with the resolution of ultrasound, shows potential for estimating temperature non-invasively in real-time by indirectly measuring the temperature dependent parameters from reconstructed images. In this work, we study the temperature dependent behavior of the generated pressure in the TA effect and experimentally demonstrate simultaneous imaging and temperature monitoring using TA imaging. The proof-of-concept experiments demonstrate millimeter spatial resolution while achieving degree-level accuracy.</p>
     </div>
   </div>
 </div>
