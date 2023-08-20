@@ -3,6 +3,17 @@
 
 # Thesis
 
+@phdthesis{phdthesiskw,
+  author = {Wang, Ke},
+  title = {PhD Thesis: Magnetic Resonance Imaging with Greater Fidelity and Efficiency},
+  school = {University of California, Berkeley},
+  abbr = "Thesis",
+  abstract = {Magnetic Resonance Imaging (MRI) is an effective medical imaging modality, offering excellent soft tissue contrast, versatile orientation capabilities, and no ionizing radiation exposure. However, its inherent physics constraints lead to time-consuming data acquisition and prolonged scan times. To reduce scan time, recently, deep learning (DL) has achieved notable success in reconstructing high-quality MR images from under-sampled data, surpassing conventional non-learned approaches. Despite this progress, challenges such as hand-crafted loss functions, high computational costs, and limited training data remain. In this dissertation, I will present a series of projects focused on enhancing fidelity and efficiency in MRI reconstruction. I will first introduce a supervised learning method that synthesizes multi-contrast MR images from a single MRF scan. Next, I will present a novel feature loss designed to preserve perceptual similarity, demonstrating its effectiveness in high-fidelity image reconstruction. Following that, I will touch upon memory-efficient learning for high-dimensional MRI reconstruction and present a novel framework for rigorous uncertainty estimation. Lastly, I will introduce a novel complex-valued representation tailored for tasks with limited training data.},
+  year = {2023},
+  preview = "thesis.jpg",
+  selected={true},
+  url= "https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-178.html"
+}
 @inproceedings{wang2023semi,
   title={Semi-supervised Parametric Real-world Image Harmonization},
   author={Wang, Ke and Gharbi, Micha{\"e}l and Zhang, He and Xia, Zhihao and Shechtman, Eli},
@@ -19,5 +30,70 @@
   abstract={Learning-based image harmonization techniques are usually trained to undo synthetic random global transformations applied to a masked foreground in a single ground truth photo. This simulated data does not model many of the important appearance mismatches (illumination, object boundaries, etc.) between foreground and background in real composites, leading to models that do not generalize well and cannot model complex local changes. We propose a new semi-supervised training strategy that addresses this problem and lets us learn complex local appearance harmonization from unpaired real composites, where foreground and background come from different images. Our model is fully parametric. It uses RGB curves to correct the global colors and tone and a shading map to model local variations. Our method outperforms previous work on established benchmarks and real composites, as shown in a user study, and processes high-resolution images interactively.}
 }
 
+@article{wang2023high,
+  title={High-fidelity direct contrast synthesis from magnetic resonance fingerprinting},
+  selected={true},
+  preview = "mrf.jpg",
+  author={Wang, Ke and Doneva, Mariya and Meineke, Jakob and Amthor, Thomas and Karasan, Ekin and Tan, Fei and Tamir, Jonathan I and Yu, Stella X and Lustig, Michael},
+  journal={Magnetic Resonance in Medicine},
+  year={2023},
+  publisher={Wiley Online Library},
+  url= "https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.29766",
+  arxiv="https://arxiv.org/abs/2212.10817",
+  abstract={Magnetic Resonance Fingerprinting (MRF) is an efficient quantitative MRI technique that can extract important tissue and system parameters such as T1, T2, B0, and B1 from a single scan. This property also makes it attractive for retrospectively synthesizing contrast-weighted images. In general, contrast-weighted images like T1-weighted, T2-weighted, etc., can be synthesized directly from parameter maps through spin-dynamics simulation (i.e., Bloch or Extended Phase Graph models). However, these approaches often exhibit artifacts due to imperfections in the mapping, the sequence modeling, and the data acquisition. Here we propose a supervised learning-based method that directly synthesizes contrast-weighted images from the MRF data without going through the quantitative mapping and spin-dynamics simulation. To implement our direct contrast synthesis (DCS) method, we deploy a conditional Generative Adversarial Network (GAN) framework and propose a multi-branch U-Net as the generator. The input MRF data are used to directly synthesize T1-weighted, T2-weighted, and fluid-attenuated inversion recovery (FLAIR) images through supervised training on paired MRF and target spin echo-based contrast-weighted scans. In-vivo experiments demonstrate excellent image quality compared to simulation-based contrast synthesis and previous DCS methods, both visually as well as by quantitative metrics. We also demonstrate cases where our trained model is able to mitigate in-flow and spiral off-resonance artifacts that are typically seen in MRF reconstructions and thus more faithfully represent conventional spin echo-based contrast-weighted images.}
+}
 
+@article{wang2022high,
+  title={High fidelity deep learning-based MRI reconstruction with instance-wise discriminative feature matching loss},
+  author={Wang, Ke and Tamir, Jonathan I and De Goyeneche, Alfredo and Wollner, Uri and Brada, Rafi and Yu, Stella X and Lustig, Michael},
+  journal={Magnetic Resonance in Medicine},
+  volume={88},
+  number={1},
+  pages={476--491},
+  year={2022},
+  publisher={Wiley Online Library},
+  preview = "ufloss.jpg",
+  selected={true},
+  code = "https://github.com/mikgroup/UFLoss",
+  url= "https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.29227",
+  arxiv="https://arxiv.org/abs/2108.12460",
+  abstract="Purpose: To improve reconstruction fidelity of fine structures and textures in deep learning (DL) based reconstructions.
+  Methods: A novel patch-based Unsupervised Feature Loss (UFLoss) is proposed and incorporated into the training of DL-based reconstruction frameworks in order to preserve perceptual similarity and high-order statistics. The UFLoss provides instance-level discrimination by mapping similar instances to similar low-dimensional feature vectors and is trained without any human annotation. By adding an additional loss function on the low-dimensional feature space during training, the reconstruction frameworks from under-sampled or corrupted data can reproduce more realistic images that are closer to the original with finer textures, sharper edges, and improved overall image quality. The performance of the proposed UFLoss is demonstrated on unrolled networks for accelerated 2D and 3D knee MRI reconstruction with retrospective under-sampling. Quantitative metrics including NRMSE, SSIM, and our proposed UFLoss were used to evaluate the performance of the proposed method and compare it with others.
+  Results: In-vivo experiments indicate that adding the UFLoss encourages sharper edges and more faithful contrasts compared to traditional and learning-based methods with pure l2 loss. More detailed textures can be seen in both 2D and 3D knee MR images. Quantitative results indicate that reconstruction with UFLoss can provide comparable NRMSE and a higher SSIM while achieving a much lower UFLoss value.
+  Conclusion: We present UFLoss, a patch-based unsupervised learned feature loss, which allows the training of DL-based reconstruction to obtain more detailed texture, finer features, and sharper edges with higher overall image quality under DL-based reconstruction frameworks."
+}
 
+@inproceedings{wang2021memory,
+  title={Memory-efficient learning for high-dimensional mri reconstruction},
+  author={Wang, Ke and Kellman, Michael and Sandino, Christopher M and Zhang, Kevin and Vasanawala, Shreyas S and Tamir, Jonathan I and Yu, Stella X and Lustig, Michael},
+  booktitle={Medical Image Computing and Computer Assisted Intervention--MICCAI 2021: 24th International Conference, Strasbourg, France, September 27--October 1, 2021, Proceedings, Part VI 24},
+  pages={461--470},
+  year={2021},
+  organization={Springer},
+  url={https://link.springer.com/chapter/10.1007/978-3-030-87231-1_45},
+  arxiv="https://arxiv.org/abs/2103.04003",
+  abstract="Deep learning (DL) based unrolled reconstructions have shown state-of-the-art performance for under-sampled magnetic resonance imaging (MRI). Similar to compressed sensing, DL can leverage high-dimensional data (e.g. 3D, 2D+time, 3D+time) to further improve performance. However, network size and depth are currently limited by the GPU memory required for backpropagation. Here we use a memory-efficient learning (MEL) framework which favorably trades off storage with a manageable increase in computation during training. Using MEL with multi-dimensional data, we demonstrate improved image reconstruction performance for in-vivo 3D MRI and 2D+time cardiac cine MRI. MEL uses far less GPU memory while marginally increasing the training time, which enables new applications of DL to high-dimensional MRI.",
+  video="https://www.youtube.com/watch?v=zkCjlOnURSc",
+  poster="MICCAI.pdf",
+  code="https://github.com/mikgroup/MEL_MRI",
+  selected={true},
+  preview = "miccai.jpg",
+}
+
+@article{shimron2022implicit,
+  title={Implicit data crimes: Machine learning bias arising from misuse of public data},
+  author={Shimron, Efrat and Tamir, Jonathan I and Wang, Ke and Lustig, Michael},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={119},
+  number={13},
+  pages={e2117203119},
+  year={2022},
+  publisher={National Acad Sciences},
+  selected={true},
+  preview = "pnas.jpg",
+  code="https://github.com/mikgroup/data_crimes",
+  url="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9060447/",
+  abstract="Although open databases are an important resource in the current deep learning (DL) era, they are sometimes used “off label”: Data published for one task are used to train algorithms for a different one. This work aims to highlight that this common practice may lead to biased, overly optimistic results. We demonstrate this phenomenon for inverse problem solvers and show how their biased performance stems from hidden data-processing pipelines. We describe two processing pipelines typical of open-access databases and study their effects on three well-established algorithms developed for MRI reconstruction: compressed sensing, dictionary learning, and DL. Our results demonstrate that all these algorithms yield systematically biased results when they are naively trained on seemingly appropriate data: The normalized rms error improves consistently with the extent of data processing, showing an artificial improvement of 25 to 48% in some cases. Because this phenomenon is not widely known, biased results sometimes are published as state of the art; we refer to that as implicit “data crimes.” This work hence aims to raise awareness regarding naive off-label usage of big data and reveal the vulnerability of modern inverse problem solvers to the resulting bias.",
+  arxiv="https://arxiv.org/abs/2109.08237",
+  video="https://www.youtube.com/watch?v=sGJQqqpOwNs&t=68s&ab_channel=ESMRMB",
+  }
