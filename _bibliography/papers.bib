@@ -80,6 +80,18 @@
   preview = "miccai.jpg",
 }
 
+
+@inproceedings{kwang20221,
+  title={Rigorous Uncertainty Estimation for MRI Reconstruction},
+  author={Wang, Ke and Angelopoulos, Anastasios and Goyeneche, Alfredo De and Kohli, Amit and Shimron, Efrat and Yu, Stella and Malik, Jitendra and Lustig, Michael},
+  booktitle={Proc. Intl. Soc. Mag. Reson. Med},
+  year={2022},
+  url="https://archive.ismrm.org/2022/0749.html",
+  selected={true},
+  preview = "uncertainty.png",
+  abstract="Deep-learning (DL)-based MRI reconstructions have shown great potential to reduce scan time while maintaining diagnostic image quality. However, their adoption has been plagued with fears that the models will hallucinate or eliminate important anatomical features. To address this issue, we develop a framework to identify when and where a reconstruction model is producing potentially misleading results. Specifically, our framework produces confidence intervals at each pixel of a reconstruction image such that 95% of these intervals contain the true pixel value with high probability. In-vivo 2D knee and brain reconstruction results demonstrate the effectiveness of our proposed uncertainty estimation framework.",
+}
+
 @article{shimron2022implicit,
   title={Implicit data crimes: Machine learning bias arising from misuse of public data},
   author={Shimron, Efrat and Tamir, Jonathan I and Wang, Ke and Lustig, Michael},
@@ -97,3 +109,33 @@
   arxiv="https://arxiv.org/abs/2109.08237",
   video="https://www.youtube.com/watch?v=sGJQqqpOwNs&t=68s&ab_channel=ESMRMB",
   }
+
+
+@article{maier2021cg,
+  title={CG-SENSE revisited: Results from the first ISMRM reproducibility challenge},
+  author={Maier, Oliver and Baete, Steven Hubert and Fyrdahl, Alexander and Hammernik, Kerstin and Harrevelt, Seb and Kasper, Lars and Karakuzu, Agah and Loecher, Michael and Patzig, Franz and Tian, Ye and others},
+  journal={Magnetic resonance in medicine},
+  volume={85},
+  number={4},
+  pages={1821--1839},
+  year={2021},
+  publisher={Wiley Online Library},
+  preview = "cg.jpg",
+  url="https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.28569",
+  abstract="The aim of this work is to shed light on the issue of reproducibility in MR image reconstruction in the context of a challenge. Participants had to recreate the results of Advances in sensitivity encoding with arbitrary k-space trajectories by Pruessmann et al. The task of the challenge was to reconstruct radially acquired multicoil k-space data brain/heart following the method in the original paper, reproducing its key figures. Results were compared to consolidated reference implementations created after the challenge, accounting for the two most common programming languages used in the submissions Matlab/Python. Visually, differences between submissions were small. Pixel-wise differences originated from image orientation, assumed field-of-view, or resolution. The reference implementations were in good agreement, both visually and in terms of image similarity metrics. While the description level of the published algorithm enabled participants to reproduce CG-SENSE in general, details of the implementation varied, for example, density compensation or Tikhonov regularization. Implicit assumptions about the data lead to further differences, emphasizing the importance of sufficient metadata accompanying open datasets. Defining reproducibility quantitatively turned out to be nontrivial for this image reconstruction challenge, in the absence of ground-truth results. Typical similarity measures like NMSE of SSIM were misled by image intensity scaling and outlier pixels. Thus, to facilitate reproducibility, researchers are encouraged to publish code and data alongside the original paper. Future methodological papers on MR image reconstruction might benefit from the consolidated reference implementations of CG-SENSE presented here, as a benchmark for methods comparison."
+}
+
+
+@article{tamir2020computational,
+  title={Computational MRI with physics-based constraints: Application to multicontrast and quantitative imaging},
+  author={Tamir, Jonathan I and Ong, Frank and Anand, Suma and Karasan, Ekin and Wang, Ke and Lustig, Michael},
+  journal={IEEE signal processing magazine},
+  volume={37},
+  number={1},
+  pages={94--104},
+  year={2020},
+  publisher={IEEE},
+  preview = "t2.png",
+  url = "https://ieeexplore.ieee.org/abstract/document/8962390",
+  abstract = "Compressed sensing takes advantage of low-dimensional signal structure to reduce sampling requirements far below the Nyquist rate. In magnetic resonance imaging (MRI), this often takes the form of sparsity through wavelet transform, finite differences, and low rank extensions. Though powerful, these image priors are phenomenological in nature and do not account for the mechanism behind the image formation. On the other hand, MRI signal dynamics are governed by physical laws, which can be explicitly modeled and used as priors for reconstruction. {1}These explicit and implicit signal priors can be synergistically combined in an inverse problem framework to recover sharp, multi-contrast images from highly accelerated scans. Furthermore, the physics-based constraints provide a recipe for recovering quantitative, bio-physical parameters from the data. This article introduces physics-based modeling constraints in MRI and shows how they can be used in conjunction with compressed sensing for image reconstruction and quantitative imaging. We describe model-based quantitative MRI, as well as its linear subspace approximation. We also discuss approaches to selecting user-controllable scan parameters given knowledge of the physical model. We present several MRI applications that take advantage of this framework for the purpose of multi-contrast imaging and quantitative mapping.",
+}
