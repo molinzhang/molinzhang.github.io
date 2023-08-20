@@ -25,4 +25,4 @@ nav_order: 6
 
 `2022 - present` Reviewer for Computational and Mathematical Methods in Medicine
 
-`2020-present` Reviewer for IEEE Transactions on Circuits and Systems for Video Technology
+`2020 - present` Reviewer for IEEE Transactions on Circuits and Systems for Video Technology
