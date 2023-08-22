@@ -65,6 +65,10 @@
   - firstname: ["Molin"]
     url: https://scholar.google.com/citations?user=M6LlDA4AAAAJ
 
+"Xu":
+  - firstname: ["Junshen"]
+    url: https://daviddmc.github.io
+
 "Pauly":
   - firstname: ["John", "John M.", "J. M."]  
     url: https://web.stanford.edu/~pauly/
@@ -76,3 +80,5 @@
 "Iglesias":
   - firstname: ["Juan Eugenio", "J. E."]
     url: https://scholar.harvard.edu/iglesias
+
+  
