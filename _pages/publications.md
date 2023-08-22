@@ -9,7 +9,7 @@ nav_order: 1
 ---
 <!-- _pages/publications.md -->
 
-<p>An up-to-date list is available on <a href="https://scholar.google.com/citations?user=Iz3m3v4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>.</p>
+<p>An up-to-date list is available on <a href="https://scholar.google.com/citations?user=M6LlDA4AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a>.</p>
 
 <div class="publications">
 
