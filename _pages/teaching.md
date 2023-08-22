@@ -10,7 +10,7 @@ nav_order: 5
 ## Massachusetts Institute of Technology
 
 - 6.437 Inference of Information *Spring 2022* 
-- 6.4800 Biomedical System Model and Inference*Spring 2023*
+- 6.4800 Biomedical System Model and Inference *Spring 2023*
 
 
 <!--
