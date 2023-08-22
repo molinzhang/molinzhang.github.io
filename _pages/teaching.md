@@ -7,10 +7,10 @@ nav: true
 nav_order: 5
 ---
 
-## UC Berkeley
+## Massachusetts Institute of Technology
 
-- EECS 16A Designing Information Devices and Systems I **GSI** *Fall 2021*
-- EECS 16B Designing Information Devices and Systems II **GSI** *Spring 2022*
+- 6.437 Inference of Information *Spring 2022* 
+- 6.4800 Biomedical System Model and Inference*Spring 2023*
 
 
 <!--
