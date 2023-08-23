@@ -19,9 +19,17 @@
   contents:
     - title: Research Enginner Intern
       institution: Samsung Research America (MPI Lab)
-      year: 2023 - present
+      year: 06/2023 - 09/2023
       description:
         - Working on next generation real-world ISP pipeline.
+    - title: Graduate Researcher Assistant
+      institution: Massachusetts Institute of Technology
+      year: 2019 - 2024
+      description:
+        - Real-time pose estimation for fetal MRI.
+        - Zero-shot self-supervise reconstrcution for temporal MRI.
+        - Selective excitation/refocusing RF pulse design with shim array.
+        - Physics-informed diffusion model for diffusion-weighted MRI process.
 
 # - title: Open Source Projects
 #   type: time_table
