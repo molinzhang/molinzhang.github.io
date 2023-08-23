@@ -21,7 +21,8 @@
       institution: Samsung Research America (MPI Lab)
       year: 06/2023 - 09/2023
       description:
-        - Working on next generation real-world ISP pipeline.
+        -  Developed novel prototypes of memory-efficient AI-powered camera imaging pipelines, showcasing their tangible viability across diverse imaging applications such as image demosaicing, denoising, registration, and more.
+        -  Two patents internally approved. Paper ready to submit.
     - title: Graduate Researcher Assistant
       institution: Massachusetts Institute of Technology
       year: 2019 - 2024
@@ -30,7 +31,17 @@
         - Zero-shot self-supervise reconstrcution for temporal MRI.
         - Selective excitation/refocusing RF pulse design with shim array.
         - Physics-informed diffusion model for diffusion-weighted MRI process.
-
+    - title: Visiting Student Scholar
+      institution: Stanford
+      year: 06/2022 - 08/2022
+      description:
+        - Optimized parameters of acquisition parameters based on the uncertainty estimation of quantitative MR with dictionary matching.      
+    - title: Research Scientist Intern
+      institution: GE Healthcare
+      year: 06/2021 - 09/2021
+      description:
+        - Designed and implemented an AI model for the precise assessment of Leg Length Discrepancy (LLD) and angle measurement through X-ray image analysis. 
+        - Patent filed.
 # - title: Open Source Projects
 #   type: time_table
 #   contents:
