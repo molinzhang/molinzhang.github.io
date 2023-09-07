@@ -381,6 +381,88 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 <!-- _layouts/bib.html -->
 <div class="row">
   <div class="col-sm-2 preview">
+<img id="RL_pathgif" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/RL_path.gif"><div id="RL_pathgif-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('RL_pathgif-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="RL_pathgif-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("RL_pathgif-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('RL_pathgif');
+      var modalImg = document.getElementById("RL_pathgif-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="10.1007/978-3-030-59725-2_38" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">Enhanced Detection of Fetal Pose in 3D MRI by Deep Reinforcement Learning with Physical Structure Priors on Anatomy</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      <a href="https://scholar.google.com/citations?user=M6LlDA4AAAAJ" rel="external nofollow noopener" target="_blank">Molin Zhang*</a>, <a href="https://daviddmc.github.io" rel="external nofollow noopener" target="_blank">Junshen Xu*</a>, Esra Abaci Turk, <a href="https://scholar.google.com/citations?user=W4dqZ7EAAAAJ" rel="external nofollow noopener" target="_blank">P. Ellen Grant</a>, and
+      <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Polina Golland, Elfar Adalsteinsson' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>In Medical Image Computing and Computer Assisted Intervention – MICCAI 2020</em>
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a href="https://doi.org/10.1007/978-3-030-59725-2_38" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
+    </div>
+    
+    <div class="badges">
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Fetal MRI is heavily constrained by unpredictable and substantial fetal motion that causes image artifacts and limits the set of viable diagnostic image contrasts. Current mitigation of motion artifacts is predominantly performed by fast, single-shot MRI and retrospective motion correction. Estimation of fetal pose in real time during MRI stands to benefit prospective methods to detect and mitigate fetal motion artifacts where inferred fetal motion is combined with online slice prescription with low-latency decision making. Current developments of deep reinforcement learning (DRL), offer a novel approach for fetal landmarks detection. In this task 15 agents are deployed to detect 15 landmarks simultaneously by DRL. The optimization is challenging, and here we propose an improved DRL that incorporates priors on physical structure of the fetal body. First, we use graph communication layers to improve the communication among agents based on a graph where each node represents a fetal-body landmark. Further, additional reward based on the distance between agents and physical structures such as the fetal limbs is used to fully exploit physical structure. Evaluation of this method on a repository of 3-mm resolution in vivo data demonstrates a mean accuracy of landmark estimation 10 mm of ground truth as 87.3%, and a mean error of 6.9 mm. The proposed DRL for fetal pose landmark search demonstrates a potential clinical utility for online detection of fetal motion that guides real-time mitigation of motion artifacts as well as health diagnosis during MRI of the pregnant mother.</p>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 preview">
 <img id="fetal_posepng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/fetal_pose.png"><div id="fetal_posepng-modal" class="modal2">
       <span class="closeimg" onclick="document.getElementById('fetal_posepng-modal').style.display='none'">×</span>
       <div class="myCaption"></div>
@@ -458,88 +540,6 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
     <!-- Hidden abstract block -->
     <div class="abstract hidden">
       <p>The performance and diagnostic utility of magnetic resonance imaging (MRI) in pregnancy is fundamentally constrained by fetal motion. Motion of the fetus, which is unpredictable and rapid on the scale of conventional imaging times, limits the set of viable acquisition techniques to single-shot imaging with severe compromises in signal-to-noise ratio and diagnostic contrast, and frequently results in unacceptable image quality. Surprisingly little is known about the characteristics of fetal motion during MRI and here we propose and demonstrate methods that exploit a growing repository of MRI observations of the gravid abdomen that are acquired at low spatial resolution but relatively high temporal resolution and over long durations (10–30 min). We estimate fetal pose per frame in MRI volumes of the pregnant abdomen via deep learning algorithms that detect key fetal landmarks. Evaluation of the proposed method shows that our framework achieves quantitatively an average error of 4.47 mm and 96.4% accuracy (with error less than 10 mm). Fetal pose estimation in MRI time series yields novel means of quantifying fetal movements in health and disease, and enables the learning of kinematic models that may enhance prospective mitigation of fetal motion artifacts during MRI acquisition.</p>
-    </div>
-  </div>
-</div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-<div class="row">
-  <div class="col-sm-2 preview">
-<img id="fetal_posepng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/fetal_pose.png"><div id="fetal_posepng-modal" class="modal2">
-      <span class="closeimg" onclick="document.getElementById('fetal_posepng-modal').style.display='none'">×</span>
-      <div class="myCaption"></div>
-      <img class="modal-content2" id="fetal_posepng-modal-img">
-    </div>
-    <script>
-      // Get the modal
-      var modal = document.getElementById("fetal_posepng-modal");
-      // Get the image and insert it inside the modal - use its "alt" text as a caption
-      var img = document.getElementById('fetal_posepng');
-      var modalImg = document.getElementById("fetal_posepng-modal-img");
-      var captionText = modal.getElementsByTagName('div')[0];
-      img.onclick = function () {
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = "";
-      }
-      // Get the <span> element that closes the modal
-      var span = modal.getElementsByTagName('span')[0];
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function () {
-        modal.style.display = "none";
-      }
-      modal.onclick = function () {
-        modal.style.display = "none";
-      }
-    </script>
-</div>
-
-  <!-- Entry bib key -->
-  <div id="10.1007/978-3-030-59725-2_38" class="col-sm-8 col-md-9">
-    <!-- Title -->
-    <div class="title">Enhanced Detection of Fetal Pose in 3D MRI by Deep Reinforcement Learning with Physical Structure Priors on Anatomy</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      <a href="https://scholar.google.com/citations?user=M6LlDA4AAAAJ" rel="external nofollow noopener" target="_blank">Molin Zhang*</a>, <a href="https://daviddmc.github.io" rel="external nofollow noopener" target="_blank">Junshen Xu*</a>, Esra Abaci Turk, <a href="https://scholar.google.com/citations?user=W4dqZ7EAAAAJ" rel="external nofollow noopener" target="_blank">P. Ellen Grant</a>, and
-      <span class="more-authors" title="click to view 2 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '2 more authors' ? 'Polina Golland, Elfar Adalsteinsson' : '2 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">2 more authors</span>
-</div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    <div class="periodical">
-      <em>In Medical Image Computing and Computer Assisted Intervention – MICCAI 2020</em>
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-      <a href="https://doi.org/10.1007/978-3-030-59725-2_38" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
-    </div>
-    
-    <div class="badges">
-    </div>
-
-    <!-- Hidden abstract block -->
-    <div class="abstract hidden">
-      <p>Fetal MRI is heavily constrained by unpredictable and substantial fetal motion that causes image artifacts and limits the set of viable diagnostic image contrasts. Current mitigation of motion artifacts is predominantly performed by fast, single-shot MRI and retrospective motion correction. Estimation of fetal pose in real time during MRI stands to benefit prospective methods to detect and mitigate fetal motion artifacts where inferred fetal motion is combined with online slice prescription with low-latency decision making. Current developments of deep reinforcement learning (DRL), offer a novel approach for fetal landmarks detection. In this task 15 agents are deployed to detect 15 landmarks simultaneously by DRL. The optimization is challenging, and here we propose an improved DRL that incorporates priors on physical structure of the fetal body. First, we use graph communication layers to improve the communication among agents based on a graph where each node represents a fetal-body landmark. Further, additional reward based on the distance between agents and physical structures such as the fetal limbs is used to fully exploit physical structure. Evaluation of this method on a repository of 3-mm resolution in vivo data demonstrates a mean accuracy of landmark estimation 10 mm of ground truth as 87.3%, and a mean error of 6.9 mm. The proposed DRL for fetal pose landmark search demonstrates a potential clinical utility for online detection of fetal motion that guides real-time mitigation of motion artifacts as well as health diagnosis during MRI of the pregnant mother.</p>
     </div>
   </div>
 </div>
