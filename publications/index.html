@@ -180,12 +180,12 @@
 <li>
 <!-- _layouts/bib.html -->
 <div class="row">
-  <div class="col-sm-2 abbr"></div>
+  <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://onlinelibrary.wiley.com/journal/15222594" rel="external nofollow noopener" target="_blank">MRM</a></abbr></div>
 
   <!-- Entry bib key -->
-  <div id="arefeen2023latent" class="col-sm-8 col-md-9">
+  <div id="https://doi.org/10.48550/arxiv.2208.13003" class="col-sm-8 col-md-9">
     <!-- Title -->
-    <div class="title">Latent signal models: Learning compact representations of signal evolution for improved time-resolved, multi-contrast MRI</div>
+    <div class="title">Latent Signal Models: Learning Compact Representations of Signal Evolution for Improved Time-Resolved, Multi-Contrast MRI</div>
     <!-- Author -->
     <div class="author">
       
@@ -217,12 +217,18 @@
 
     <!-- Links/Buttons -->
     <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.29657" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
+      <a href="http://arxiv.org/abs/2208.13003" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
     </div>
     
     <div class="badges">
     </div>
 
-    
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Purpose: Training auto-encoders on simulated signal evolution and inserting the decoder into the forward model improves reconstructions through more compact, Bloch-equation-based representations of signal in comparison to linear subspaces. Methods: Building on model-based nonlinear and linear subspace techniques that enable reconstruction of signal dynamics, we train auto-encoders on dictionaries of simulated signal evolution to learn more compact, non-linear, latent representations. The proposed Latent Signal Model framework inserts the decoder portion of the auto-encoder into the forward model and directly reconstructs the latent representation. Latent Signal Models essentially serve as a proxy for fast and feasible differentiation through the Bloch-equations used to simulate signal. This work performs experiments in the context of T2-shuffling, gradient echo EPTI, and MPRAGE-shuffling. We compare how efficiently auto-encoders represent signal evolution in comparison to linear subspaces. Simulation and in-vivo experiments then evaluate if reducing degrees of freedom by inserting the decoder into the forward model improves reconstructions in comparison to subspace constraints. Results: An auto-encoder with one real latent variable represents FSE, EPTI, and MPRAGE signal evolution as well as linear subspaces characterized by four basis vectors. In simulated/in-vivo T2-shuffling and in-vivo EPTI experiments, the proposed framework achieves consistent quantitative NRMSE and qualitative improvement over linear approaches. From qualitative evaluation, the proposed approach yields images with reduced blurring and noise amplification in MPRAGE shuffling experiments. Conclusion: Directly solving for non-linear latent representations of signal evolution improves time-resolved MRI reconstructions through reduced degrees of freedom.</p>
+    </div>
   </div>
 </div>
 </li>
