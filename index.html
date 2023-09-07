@@ -331,7 +331,35 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 <li>
 <!-- _layouts/bib.html -->
 <div class="row">
-  <div class="col-sm-2 abbr"></div>
+  <div class="col-sm-2 preview">
+<img id="Selectivepng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/Selective.png"><div id="Selectivepng-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('Selectivepng-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="Selectivepng-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("Selectivepng-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('Selectivepng');
+      var modalImg = document.getElementById("Selectivepng-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
 
   <!-- Entry bib key -->
   <div id="zhang2022selective" class="col-sm-8 col-md-9">
@@ -369,6 +397,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
     <!-- Links/Buttons -->
     <div class="links">
       <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/mrm.29114" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
     </div>
     
     <div class="badges">
