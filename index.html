@@ -282,7 +282,35 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 <li>
 <!-- _layouts/bib.html -->
 <div class="row">
-  <div class="col-sm-2 abbr"></div>
+  <div class="col-sm-2 preview">
+<img id="SOpng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/SO.png"><div id="SOpng-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('SOpng-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="SOpng-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("SOpng-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('SOpng');
+      var modalImg = document.getElementById("SOpng-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
 
   <!-- Entry bib key -->
   <div id="zhang2023pulse" class="col-sm-8 col-md-9">
@@ -319,12 +347,17 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
     <!-- Links/Buttons -->
     <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a href="https://doi.org/10.1002/mrm.29827" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
     </div>
     
     <div class="badges">
     </div>
 
-    
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>AbstractPurpose:Developing a general framework with a novel stochastic offset strat-egy for the design of optimized RF pulses and time-varying spatially non-linearΔB0shim array fields for restricted slice excitation and refocusing with refinedmagnetization profiles within the intervals of the fixed voxels.Methods:Our framework uses the decomposition property of the Blochequations to enable joint design of RF-pulses and shim array fields for restrictedslice excitation and refocusing with auto-differentiation optimization. Blochsimulations are performed independently on orthogonal basis vectors, Mx, My,and Mz, which enables designs for arbitrary initial magnetizations. Require-ments for refocusing pulse designs are derived from the extended phase graphformalism obviating time-consuming sub-voxel isochromatic simulations tomodel the effects of crusher gradients. To refine resultant slice-profiles becauseofvoxelwiseoptimizationfunctions,weproposeanalgorithmthatstochasticallyoffsets spatial points at which loss is computed during optimization.Results:We first applied our proposed design framework to standardslice-selective excitation and refocusing pulses in the absence of non-linearΔB0shim array fields and compared them against pulses designed with Shinnar-LeRoux algorithm. Next, we demonstrated our technique in a simulated setup offetal brain imaging in pregnancy for restricted-slice excitation and refocusing ofthe fetal brain.Conclusions:Our proposed framework for optimizing RF pulse andtime-varying spatially non-linearΔB0shim array fields achieve high fidelityrestricted-slice excitation and refocusing for fetal MRI, which could enablezoomed fast-spin-echo-MRI and other applications.</p>
+    </div>
   </div>
 </div>
 </li>
@@ -397,7 +430,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
     <!-- Links/Buttons -->
     <div class="links">
       <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-      <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/mrm.29114" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
+      <a href="https://doi.org/10.1002/mrm.29114" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
     </div>
     
     <div class="badges">
