@@ -19,7 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi! My name is Molin Zhang and I’m a rising fifth-year PhD student at Electrical Engineering and Computer Science at MIT working with Prof. Elfar Adalsteinsson.
+Hi! My name is Molin Zhang and I’m a fifth-year PhD student at Electrical Engineering and Computer Science at MIT working with Prof. Elfar Adalsteinsson.
 My research centers on the intersection of computational imaging, computer vision, and signal processing, with a particular emphasis on medical imaging. I delve into the realm of inverse problems, utilizing numerical simulations to develop innovative solutions. 
 
 
