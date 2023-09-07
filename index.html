@@ -169,7 +169,7 @@
           </div>
 
           <div class="clearfix">
-            <p>Hi! My name is Molin Zhang and I’m a rising fifth-year PhD student at Electrical Engineering and Computer Science at MIT working with Prof. Elfar Adalsteinsson.
+            <p>Hi! My name is Molin Zhang and I’m a fifth-year PhD student at Electrical Engineering and Computer Science at MIT working with Prof. Elfar Adalsteinsson.
 My research centers on the intersection of computational imaging, computer vision, and signal processing, with a particular emphasis on medical imaging. I delve into the realm of inverse problems, utilizing numerical simulations to develop innovative solutions.</p>
 
 <p>Feel free to reach me at <strong>molin [at] mit [dot] edu</strong>.</p>
@@ -245,7 +245,35 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 <li>
 <!-- _layouts/bib.html -->
 <div class="row">
-  <div class="col-sm-2 abbr"></div>
+  <div class="col-sm-2 preview">
+<img id="MIDLpng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/MIDL.png"><div id="MIDLpng-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('MIDLpng-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="MIDLpng-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("MIDLpng-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('MIDLpng');
+      var modalImg = document.getElementById("MIDLpng-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
 
   <!-- Entry bib key -->
   <div id="zhang2023zero" class="col-sm-8 col-md-9">
@@ -262,7 +290,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
     
     
     <div class="periodical">
-      <em>In Medical Imaging with Deep Learning</em>, 2023
+      <em>In Medical Imaging with Deep Learning – MIDL 2023</em>
     </div>
     <div class="periodical">
       
@@ -270,12 +298,18 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
     <!-- Links/Buttons -->
     <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a href="http://arxiv.org/abs/2303.02254" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      <a href="/assets/pdf/MIDL_poster_204.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Poster</a>
     </div>
     
     <div class="badges">
     </div>
 
-    
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Fast spin-echo (FSE) pulse sequences for Magnetic Resonance Imaging (MRI) offer important imaging contrast in clinically feasible scan times. T2-shuffling is widely used to resolve temporal signal dynamics in FSE acquisitions by exploiting temporal correlations via linear latent space and a predefined regularizer. However, predefined regularizers fail to exploit the incoherence especially for 2D acquisitions.Recent self-supervised learning methods achieve high-fidelity reconstructions by learning a regularizer from undersampled data without a standard supervised training data set. In this work, we propose a novel approach that utilizes a self supervised learning framework to learn a regularizer constrained on a linear latent space which improves time-resolved FSE images reconstruction quality. Additionally, in regimes without groundtruth sensitivity maps, we propose joint estimation of coil-sensitivity maps using an iterative reconstruction technique. Our technique functions is in a zero-shot fashion, as it only utilizes data from a single scan of highly undersampled time series images. We perform experiments on simulated and retrospective in-vivo data to evaluate the performance of the proposed zero-shot learning method for temporal FSE reconstruction. The results demonstrate the success of our proposed method where NMSE and SSIM are significantly increased and the artifacts are reduced.</p>
+    </div>
   </div>
 </div>
 </li>
