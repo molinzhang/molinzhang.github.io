@@ -465,7 +465,35 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 <li>
 <!-- _layouts/bib.html -->
 <div class="row">
-  <div class="col-sm-2 abbr"><abbr class="badge"><a href="http://www.miccai.org/" rel="external nofollow noopener" target="_blank">MICCAI</a></abbr></div>
+  <div class="col-sm-2 preview">
+<img id="fetal_posepng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/fetal_pose.png"><div id="fetal_posepng-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('fetal_posepng-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="fetal_posepng-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("fetal_posepng-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('fetal_posepng');
+      var modalImg = document.getElementById("fetal_posepng-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
 
   <!-- Entry bib key -->
   <div id="10.1007/978-3-030-59725-2_38" class="col-sm-8 col-md-9">
