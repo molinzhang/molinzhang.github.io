@@ -11,6 +11,7 @@ nav_order: 5
 
 - 6.437 Inference of Information *Spring 2022* 
 - 6.4800 Biomedical System Model and Inference *Spring 2023*
+- 6.8810 Data Acquisition and Image Reconstruction in MRI *Fall 2023*
 
 
 <!--
