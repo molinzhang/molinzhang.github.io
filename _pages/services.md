@@ -9,5 +9,5 @@ nav_order: 6
 
 ## Reviewer
 
-- `2023` Reviewer for MICCAI, AAAI workshop
+- `2023` Reviewer for MICCAI, AAAI and AAAI workshop
 - `2022` Publicity Chair at MIT graduate residence hall
