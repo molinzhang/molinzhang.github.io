@@ -20,8 +20,10 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 Hi! My name is Molin Zhang and I’m a fifth-year PhD student at Electrical Engineering and Computer Science at MIT working with Prof. Elfar Adalsteinsson.
+
 My research centers on the intersection of computational imaging, computer vision, and signal processing, with a particular emphasis on medical imaging. I delve into the realm of inverse problems, utilizing numerical simulations to develop innovative solutions. 
 
+I completed two significant summer internships. At **GE Healthcare**, I developed an automated LLD measurement system, contributing to advancements in healthcare technology. At **Samsung's Mobile Processor Innovation (MPI) Lab**, I designed frameworks and techniques for next-gen Image Signal Processor (ISP) pipeline, focusing on super high-resolution imaging in mobile devices.
 
 Feel free to reach me at **molin [at] mit [dot] edu**.
 
