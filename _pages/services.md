@@ -8,7 +8,7 @@ nav_order: 6
 ---
 
 ## Reviewer
-- `2024` Reviewer for MICCAI, MIDL
+- `2024` Reviewer for MICCAI, MIDL, CVPR Workshop
 - `2023` Reviewer for MICCAI, AAAI and AAAI workshop
 
 ## Social service 
