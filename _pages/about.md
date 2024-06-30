@@ -30,7 +30,7 @@ My research centers on the intersection of computational imaging, computer visio
 I completed two significant summer internships. At **GE Healthcare**, I developed an automated LLD measurement system, contributing to advancements in healthcare technology. At **Samsung's Mobile Processor Innovation (MPI) Lab**, I designed frameworks and techniques for next-gen Image Signal Processor (ISP) pipeline, focusing on super high-resolution imaging in mobile devices.
 
 
-Feel free to reach me at **molin [at] mit [dot] edu** or **zhangmolin18@gmail.com**.
+Feel free to reach me at **molin [at] mit [dot] edu** or **zhangmolin18 [at] gmail [dot] com**.
 
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.test
