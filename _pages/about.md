@@ -19,7 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hello! My name is Molin Zhang. I'm currently a Machine Learning Research Engineer at Apple under Camera Algorithm Team.
+Hello! My name is Molin Zhang. I'm currently a Machine Learning Research Engineer at **Apple** under Camera Algorithm Team.
 
 I got my PhD from **Electrical Engineering and Computer Science (EECS) at MIT** working with Prof. Elfar Adalsteinsson.
 
