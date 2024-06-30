@@ -19,7 +19,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi! My name is Molin Zhang and I’m a fifth-year PhD student at **Electrical Engineering and Computer Science (EECS) at MIT** working with Prof. Elfar Adalsteinsson.
+Hello! My name is Molin Zhang. I'm currently a Machine Learning Research Engineer at Apple under Camera Algorithm Team.
+
+I got my PhD from **Electrical Engineering and Computer Science (EECS) at MIT** working with Prof. Elfar Adalsteinsson.
 
 
 My research centers on the intersection of computational imaging, computer vision, and signal processing, with a particular emphasis on medical imaging. I delve into the realm of inverse problems, utilizing numerical simulations to develop innovative solutions. 
@@ -28,7 +30,7 @@ My research centers on the intersection of computational imaging, computer visio
 I completed two significant summer internships. At **GE Healthcare**, I developed an automated LLD measurement system, contributing to advancements in healthcare technology. At **Samsung's Mobile Processor Innovation (MPI) Lab**, I designed frameworks and techniques for next-gen Image Signal Processor (ISP) pipeline, focusing on super high-resolution imaging in mobile devices.
 
 
-Feel free to reach me at **molin [at] mit [dot] edu**.
+Feel free to reach me at **molin [at] mit [dot] edu** or **zhangmolin18@gmail.com**.
 
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.test
