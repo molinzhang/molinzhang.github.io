@@ -21,7 +21,7 @@ social: true  # includes social icons at the bottom of the page
 
 Hello! My name is Molin Zhang. I'm currently a Machine Learning Research Engineer at **Apple** under Camera Algorithm Team.
 
-I got my PhD from **Electrical Engineering and Computer Science (EECS) at MIT** working with Prof. Elfar Adalsteinsson.
+I got my PhD from **Electrical Engineering and Computer Science (EECS) at MIT** supervised by Prof. Elfar Adalsteinsson.
 
 
 My research centers on the intersection of computational imaging, computer vision, and signal processing, with a particular emphasis on medical imaging. I delve into the realm of inverse problems, utilizing numerical simulations to develop innovative solutions. 
