@@ -19,12 +19,12 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hello! My name is Molin Zhang. I'm currently a Machine Learning Research Engineer at **Apple** under Camera Algorithm Team.
+Hello! My name is Molin Zhang. I'm currently a Machine Learning Researcher at **Apple Foundation Model (AFM)** team. My main focus is Multi-modal pretraining for Apple Intelligence. 
 
 I got my PhD from **Electrical Engineering and Computer Science (EECS) at MIT** supervised by Prof. Elfar Adalsteinsson in 2024. I got my Bachelor degree from **Tsinghua University** in 2019.
 
 
-My research centers on the intersection of computational imaging, computer vision, and signal processing, with a particular emphasis on medical imaging. I delve into the realm of inverse problems, utilizing numerical simulations to develop innovative solutions. 
+My research centers on Large Language Model (LLM); Multi-Modal Language Model ; Image generative AI (diffusion and flow-matching models); computational imaging restoration and processing; computer vision.
 
 
 I completed two significant summer internships. At **GE Healthcare**, I developed an automated LLD measurement system, contributing to advancements in healthcare technology. At **Samsung's Mobile Processor Innovation (MPI) Lab**, I designed frameworks and techniques for next-gen Image Signal Processor (ISP) pipeline, focusing on super high-resolution imaging in mobile devices.
